@@ -1,0 +1,31 @@
+Tutoriel premium – Calculateur d’affiliation (Excel/Google Sheets)
+
+1. Ouvre le fichier calculateur-affiliation.xlsx (Excel ou Google Sheets recommandé).
+2. Remplis chaque ligne :
+   - Type de campagne (ex. “Standard”, “Flash Premium”, “Webinar”, etc.)
+   - Taux commission (%) : 30 à 60% selon programme
+   - Prix produit (€)
+   - Nb ventes
+   - Upsell inclus ? (OUI/NON – coche la case pour calcul auto)
+   - Bonus inclus ? (OUI/NON)
+   - Taux de conversion (%) : ventes/visiteurs×100
+   - Source trafic : YouTube, Email, Insta, etc.
+   - Notes : astuce, particularité, promo, angle
+3. Le gain total se calcule automatiquement (formule déjà intégrée).
+   - Si Upsell “OUI” : gain augmenté de 25%
+4. Onglet “Leaderboard” : reporte tes résultats ou classements pour te challenger avec d’autres affiliés.
+5. Dashboard : lis les graphiques pour comprendre quels canaux/produits performent le plus.
+6. Astuces premium :
+   - Mets en couleur les campagnes qui dépassent 10% de conversion
+   - Utilise le champ notes pour noter tes tests, sources, split-tests
+   - Exporte en PDF pour suivre ta progression mois après mois
+   - Si “Objectif atteint ?” = “✅”, tente une nouvelle stratégie/scaling !
+
+Exemple rapide :
+| Type de campagne | Taux comm. | Prix | Nb ventes | Upsell ? | Gain total (€) | Objectif atteint ? |
+|------------------|------------|-------|-----------|----------|----------------|--------------------|
+| Standard         | 30%        | 47    | 8         | NON      | 112.80         |                   |
+| Flash Premium    | 45%        | 147   | 2         | OUI      | 165.38         | ✅                 |
+
+Ajoute/duplique les lignes et scénarios à volonté.  
+N’oublie pas de renseigner tes propres résultats chaque semaine pour visualiser ta progression.

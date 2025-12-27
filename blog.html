@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <title>Blog Systeme.io - Conseils et tutoriels</title>
+  <meta name="description" content="Articles et guides pratiques sur Systeme.io. Apprenez à créer des tunnels de vente, automatiser votre marketing, et bien plus.">
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://systeme-avis.com/blog.html">
+  <link rel="alternate" hreflang="fr" href="https://systeme-avis.com/blog.html">
+  <link rel="alternate" hreflang="en" href="https://systeme-avis.com/en/blog.html">
+  <link rel="alternate" hreflang="x-default" href="https://systeme-avis.com/">
+
+  <!-- Open Graph / Twitter complétés -->
+  <meta property="og:title" content="Blog Systeme.io - Conseils et tutoriels">
+  <meta property="og:description" content="Découvrez nos guides pratiques pour maîtriser Systeme.io">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://systeme-avis.com/blog.html">
+  <meta property="og:image" content="https://systeme-avis.com/images/capture-1.png">
+  <meta property="og:site_name" content="SystemeAvis">
+  <meta property="og:locale" content="fr_FR">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://systeme-avis.com/images/capture-1.png">
+
+  <!-- Icône & CSS -->
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Preload probable LCP (première carte) -->
+  <link rel="preload" as="image" href="images/blog-tunnel-vente.jpg">
+
+  <!-- Google Consent Mode v2 (par défaut: refus) -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      ad_storage: 'denied',
+      analytics_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      functionality_storage: 'granted',
+      security_storage: 'granted',
+      wait_for_update: 500
+    });
+    gtag('set','ads_data_redaction', true);
+    gtag('set','url_passthrough', true);
+  </script>
+  <script>
+  // Charge GA4 uniquement après consentement explicite
+  (function(){
+    var GA_ID = 'G-TDPQWEH6YK';
+    var loaded = false;
+    window.loadGA4 = function(){
+      if (loaded) return;
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+      s.onload = function(){
+        gtag('js', new Date());
+        gtag('config', GA_ID, { anonymize_ip: true });
+      };
+      document.head.appendChild(s);
+      loaded = true;
+    };
+    window.acceptAll = function(){
+      gtag('consent','update',{
+        ad_user_data:'granted',
+        ad_personalization:'granted',
+        ad_storage:'granted',
+        analytics_storage:'granted',
+        functionality_storage:'granted',
+        security_storage:'granted'
+      });
+      loadGA4();
+    };
+    window.rejectAll = function(){
+      gtag('consent','update',{
+        ad_user_data:'denied',
+        ad_personalization:'denied',
+        ad_storage:'denied',
+        analytics_storage:'denied',
+        functionality_storage:'granted',
+        security_storage:'granted'
+      });
+    };
+  })();
+  </script>
+
+  <!-- Données structurées -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "url":"https://systeme-avis.com/",
+    "name":"SystemeAvis",
+    "potentialAction":{
+      "@type":"SearchAction",
+      "target":"https://systeme-avis.com/blog.html?q={search_term_string}",
+      "query-input":"required name=search_term_string"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"SystemeAvis",
+    "url":"https://systeme-avis.com/",
+    "logo":"https://systeme-avis.com/images/logo-systemeio.png"
+  }
+  </script>
+  <!-- Liste d’articles (ItemList) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ItemList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"url":"https://systeme-avis.com/blog-1.html"},
+      {"@type":"ListItem","position":2,"url":"https://systeme-avis.com/blog-2.html"},
+      {"@type":"ListItem","position":3,"url":"https://systeme-avis.com/blog-3.html"}
+    ]
+  }
+  </script>
+  <!-- Fil d’Ariane -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Accueil","item":"https://systeme-avis.com/"},
+      {"@type":"ListItem","position":2,"name":"Blog","item":"https://systeme-avis.com/blog.html"}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <img src="images/logo-systemeio.png" alt="Systeme.io Logo" loading="eager" width="180" height="48">
+      </a>
+      <nav class="main-nav" aria-label="Navigation principale">
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="blog.html" class="nav-link active">Blog</a>
+        <a href="mentions-legales.html" class="nav-link">Mentions légales</a>
+        <a href="politique-de-confidentialite.html" class="nav-link">Confidentialité</a>
+        <a href="https://systeme.io/fr?sa=sa022920257535b2a67f9fded54e95fb2cb3a100dc" class="btn btn-primary" target="_blank" rel="noopener">Essai Gratuit</a>
+        <!-- Sélecteur de langue -->
+        <div class="language-selector">
+          <a href="blog.html" hreflang="fr" aria-label="Version française" class="active">FR</a>
+          <span>|</span>
+          <a href="en/blog.html" hreflang="en" aria-label="English version">EN</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu-principal">
+    <!-- H1 accessible (SEO) -->
+    <h1 style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">
+      Blog Systeme.io – Conseils et tutoriels
+    </h1>
+
+  
+    <!-- SECTION BLOG : Articles sous forme de cartes modernes -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Articles récents</h2>
+        <div class="blog-grid">
+
+          <!-- Article 1 : Tunnel de vente -->
+          <article class="blog-card">
+            <div class="card-image">
+              <img src="images/blog-tunnel-vente.jpg"
+                   alt="Tunnel de vente Systeme.io"
+                   width="800" height="450"
+                   loading="eager" fetchpriority="high" decoding="async">
+              <span class="card-badge">Tunnels</span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">Publié le 7 Juillet 2025</div>
+              <h3 class="card-title">Créer un tunnel de vente efficace avec Systeme.io</h3>
+              <p class="card-text">Apprenez à mettre en place un tunnel de vente performant étape par étape.</p>
+              <div class="card-footer">
+                <a href="blog-1.html" class="btn btn-primary">Lire l'article</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 2 : Email marketing -->
+          <article class="blog-card">
+            <div class="card-image">
+              <img src="images/blog-email.jpg"
+                   alt="Email marketing Systeme.io"
+                   width="800" height="450"
+                   loading="lazy" decoding="async">
+              <span class="card-badge">Email Marketing</span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">Publié le 5 Juillet 2025</div>
+              <h3 class="card-title">Automatisez votre email marketing avec Systeme.io</h3>
+              <p class="card-text">Découvrez comment automatiser facilement vos campagnes emails.</p>
+              <div class="card-footer">
+                <a href="blog-2.html" class="btn btn-primary">Lire l'article</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 3 : Affiliation -->
+          <article class="blog-card">
+            <div class="card-image">
+              <img src="images/blog-affiliation.jpg"
+                   alt="Affiliation Systeme.io"
+                   width="800" height="450"
+                   loading="lazy" decoding="async">
+              <span class="card-badge">Affiliation</span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">Publié le 2 Juillet 2025</div>
+              <h3 class="card-title">Réussir avec l'affiliation grâce à Systeme.io</h3>
+              <p class="card-text">Techniques et astuces pour générer des revenus passifs avec l'affiliation.</p>
+              <div class="card-footer">
+                <a href="blog-3.html" class="btn btn-primary">Lire l'article</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER (Formulaire Slim) -->
+    <section id="newsletter-googleform" class="section newsletter bg-light">
+      <div class="container text-center">
+        <h2>Recevoir le Kit Affilié Platinum Gratuit :</h2>
+        <p class="lead">Entrez votre email ci-dessous pour recevoir le kit complet dans votre boîte mail :</p>
+        <!-- FORMULAIRE EMAIL KIT AFFILIÉ (Slim) -->
+        <form id="kit-affilie-form" autocomplete="off" style="display:flex;gap:12px;justify-content:center;align-items:center;max-width:370px;margin:32px auto 20px;">
+          <input type="email" name="email" id="email-affilie" required
+                placeholder="Votre email" style="flex:1 1 0;min-width:0;padding:10px 18px;border:1px solid #ddd;border-radius:20px;font-size:1.08em;">
+          <button type="submit"
+                  style="padding:10px 26px;border-radius:20px;border:none;background:var(--primary,#5E56E8);color:#fff;font-weight:600;cursor:pointer;">
+            Recevoir le kit
+          </button>
+        </form>
+        <div id="kit-affilie-success" style="display:none;text-align:center;color:var(--primary,#5E56E8);margin-bottom:18px;font-weight:600;">
+          🎉 Merci ! Vérifie ta boîte mail, le lien vient d'arriver.
+        </div>
+        <p class="mini-txt" style="margin-top:1em;">Aucun spam, désinscription possible à tout moment.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer bg-dark">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo-footer">
+            <img src="images/logo-systemeio.png" alt="Systeme.io Logo" loading="eager" width="180" height="48">
+          </a>
+          <p>Le guide indépendant pour maîtriser Systeme.io et développer votre business en ligne.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="mentions-legales.html">Mentions légales</a></li>
+            <li><a href="politique-de-confidentialite.html">Confidentialité</a></li>
+          </ul>
+        </div>
+        <div class="footer-cta">
+          <h3>Essayer Systeme.io</h3>
+          <p>Commencez gratuitement et sans carte bancaire</p>
+          <a href="https://systeme.io/fr?sa=sa022920257535b2a67f9fded54e95fb2cb3a100dc" class="btn btn-outline-light" target="_blank" rel="noopener">Essai Gratuit</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 SystemeAvis. Site non officiel. Certains liens sont affiliés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+  <script src="js/main.js"></script>
+  
+  <!-- BOUTON OUVERTURE POPUP -->
+  <button id="openNewsletterPopup" class="btn btn-primary" style="position:fixed;bottom:32px;right:32px;z-index:900;">
+    🎁 Obtenir le Kit Affilié
+  </button>
+
+  <!-- POPUP NEWSLETTER (Formulaire Slim aussi) -->
+  <div id="newsletterPopup"
+      style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(20,22,44,0.64);z-index:999;display:flex;align-items:center;justify-content:center;">
+    <div style="background:var(--white,#fff);border-radius:var(--radius-xl,22px);max-width:430px;width:94vw;padding:32px 18px;box-shadow:0 8px 32px #0003;position:relative;">
+      <button id="closeNewsletterPopup" aria-label="Fermer"
+        style="position:absolute;top:12px;right:18px;font-size:1.6em;background:none;border:none;cursor:pointer;color:var(--primary,#5E56E8);">
+        &times;
+      </button>
+      <h2 style="color:var(--primary,#5E56E8);text-align:center;margin-top:0;">Recevoir le Kit Affilié Platinum</h2>
+      <p style="text-align:center;">Entrez votre email ci-dessous pour recevoir le kit complet dans votre boîte mail :</p>
+      <!-- Même formulaire slim dans le popup -->
+      <form id="kit-affilie-form-popup" autocomplete="off" style="display:flex;gap:12px;justify-content:center;align-items:center;max-width:370px;margin:18px auto 8px;">
+        <input type="email" name="email" id="email-affilie-popup" required
+              placeholder="Votre email" style="flex:1 1 0;min-width:0;padding:10px 18px;border:1px solid #ddd;border-radius:20px;font-size:1.08em;">
+        <button type="submit"
+                style="padding:10px 26px;border-radius:20px;border:none;background:var(--primary,#5E56E8);color:#fff;font-weight:600;cursor:pointer;">
+          Recevoir le kit
+        </button>
+      </form>
+      <div id="kit-affilie-success-popup" style="display:none;text-align:center;color:var(--primary,#5E56E8);margin-bottom:18px;font-weight:600;">
+        🎉 Merci ! Vérifie ta boîte mail, le lien vient d'arriver.
+      </div>
+      <p class="mini-txt" style="text-align:center;margin-top:1em;color:var(--gray,#888);">Aucun spam. Désinscription possible à tout moment.</p>
+    </div>
+  </div>
+
+  <!-- SCRIPT D'AFFICHAGE POPUP & SOUMISSION EMAIL -->
+  <script>
+    // Popup display
+    document.getElementById('openNewsletterPopup').onclick = function() {
+      document.getElementById('newsletterPopup').style.display = 'flex';
+    };
+    document.getElementById('closeNewsletterPopup').onclick = function() {
+      document.getElementById('newsletterPopup').style.display = 'none';
+    };
+    document.getElementById('newsletterPopup').onclick = function(e) {
+      if (e.target === this) this.style.display = 'none';
+    };
+
+    // Soumission formulaire section
+    document.getElementById('kit-affilie-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var email = document.getElementById('email-affilie').value;
+      fetch('https://script.google.com/macros/s/AKfycbxtsu8vW25uGDXuj9ioE0j7yzaNzyLnhdAU26M6G-BipUkjoo91R07g9X8QR8akaX8l/exec', {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email })
+      });
+      document.getElementById('kit-affilie-form').style.display = 'none';
+      document.getElementById('kit-affilie-success').style.display = 'block';
+    });
+    // Soumission formulaire popup
+    document.getElementById('kit-affilie-form-popup').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var email = document.getElementById('email-affilie-popup').value;
+      fetch('https://script.google.com/macros/s/AKfycbxtsu8vW25uGDXuj9ioE0j7yzaNzyLnhdAU26M6G-BipUkjoo91R07g9X8QR8akaX8l/exec', {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email })
+      });
+      document.getElementById('kit-affilie-form-popup').style.display = 'none';
+      document.getElementById('kit-affilie-success-popup').style.display = 'block';
+    });
+  </script>
+</body>
+</html>

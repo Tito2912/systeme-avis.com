@@ -1,0 +1,20 @@
+Générateur UTM – Tracking PRO Affiliation
+
+Exemple de lien complet :
+https://[URL_AFFILIE]?utm_source=facebook&utm_medium=cpc&utm_campaign=lancement-juillet&utm_content=banner-v1&utm_term=formation-automatisation
+
+Tableau d’aide à remplir :
+| url             | utm_source | utm_medium | utm_campaign       | utm_content    | utm_term             |
+|-----------------|------------|------------|--------------------|---------------|----------------------|
+| [URL_AFFILIE]   | facebook   | cpc        | lancement-juillet  | banner-v1     | formation-automation |
+| [URL_AFFILIE]   | email      | newsletter | relance-juillet    | header        | replay-webinar       |
+
+Outils en ligne recommandés :
+- https://ga-dev-tools.web.app/ga4/campaign-url-builder/
+- https://utm-builder.net/
+- https://app.bitly.com/ (pour raccourcir tes liens trackés)
+
+Tips Premium :
+- Change la valeur utm_content à chaque bannière ou variante A/B
+- Surveille tes stats UTM dans Google Analytics ou Systeme.io
+- Nomme clairement tes campagnes pour retrouver chaque vente/lead

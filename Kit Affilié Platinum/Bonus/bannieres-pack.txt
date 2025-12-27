@@ -1,0 +1,37 @@
+BANNIÈRES PREMIUM – Prompts IA, tailles, guide & conseils
+
+1. Facebook/Blog (1200x628px) :
+Prompt IA :  
+“Bannière vectorielle premium, fond dégradé bleu-vert, icône funnel moderne, texte ‘Offre Platinum – Jusqu’à 50 % de commission’, badge bonus en haut, bouton vert ‘Je découvre’, logo [PRODUIT], ombre douce, style SaaS pro, sans photo visage.”
+
+2. Insta Story/Shorts (1080x1920px) :
+Prompt IA :  
+“Full vertical ad, flat design, fond bleu nuit, icônes badge/éclair, ‘Rejoins les affiliés gagnants !’ en haut, bouton CTA ultra visible, logo en bas, style moderne/tech, accents or.”
+
+3. Display classique (728x90px) :
+Prompt IA :  
+“Interface SaaS stylisée, fond blanc, icône conversion, titre ‘Offre flash premium’, bouton bleu, coins arrondis, ombre portée, style LinkedIn.”
+
+4. Sidebar/Email (300x600px) :
+Prompt IA :  
+“Illustration funnel en 3 étapes, fond bleu-vert, ‘Boostez vos commissions’, icônes main/cadeau, CTA orange, style simple, adapté sidebar.”
+
+5. Bonus : Mockups visuels .png à générer (mettre dans images/) :
+Prompt IA :  
+“Mockup page tunnel affiliation sur écran PC + smartphone, lumière studio, branding Platinum.”
+
+—
+
+**IA recommandées :**
+- Canva (templates)
+- Ideogram.ai (texte en FR multi-style)
+- Leonardo.ai (vectoriel, mockups réalistes)
+
+—
+
+**Tips :**
+- Ajoute ton lien affilié en overlay + QR code généré (via https://www.qr-code-generator.com/)
+- Mets chaque bannière dans le dossier /images/
+- Teste des variantes en modifiant “accent color” ou “style : minimal/gradient/3D”
+
+**Pour recevoir un ZIP prêt à l’emploi (PNG/JPG/PSD/Canva), précise ta sélection ou dis “génère-moi tout” !**

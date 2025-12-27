@@ -1,0 +1,38 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /includes/
+Disallow: /cgi-bin/
+Disallow: /api/
+
+Sitemap: https://systeme-avis.com/sitemap.xml
+
+# Multi-language content
+User-agent: Googlebot
+Allow: /
+
+# Crawl directives for internationalization
+User-agent: Googlebot
+Allow: /en/
+Allow: /fr/
+
+# Image crawling
+User-agent: Googlebot-Image
+Allow: /images/
+
+# Ads crawling
+User-agent: Adsbot-Google
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+
+# Yandex (host + canonicalisation des paramètres)
+User-agent: Yandex
+Allow: /
+Clean-param: utm_source&utm_medium&utm_campaign&utm_term&utm_content&utm_id&gclid&fbclid&msclkid /
+
+# Le Host Yandex doit être en fin de fichier
+Host: systeme-avis.com

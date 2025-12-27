@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>[TITRE WEBINAR] - Session Privée Premium</title>
+  <meta name="description" content="[DESCRIPTION WEBINAR]">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    body {font-family: 'Inter', Arial, sans-serif; background: #f3f7fa; margin: 0; color: #232323;}
+    .hero {background: linear-gradient(90deg, #2864F0 60%, #2ECC71 100%); color: #fff; padding: 2.5em 1em 2em; text-align: center;}
+    .badge {background:#FFC700;color:#232323;display:inline-block;padding:7px 18px;border-radius:19px;font-weight:900;font-size:1.1em;margin-bottom:1em;}
+    .timer {background:#E74C3C;padding:5px 14px;border-radius:12px;display:inline-block;color:#fff;font-weight:700;font-size:1.07em;margin-top:10px;}
+    .cta {display:block;margin:2.1em auto 1.5em;background:#2ECC71;color:#fff;border:none;padding:1.15em 2.5em;border-radius:12px;font-size:1.22em;font-weight:800;text-align:center;text-decoration:none;transition:background .19s;}
+    .cta:hover {background:#228d51;}
+    .webinar-block {max-width:840px;margin:0 auto 34px;background:#fff;border-radius:18px;box-shadow:0 2px 18px #0001;padding:32px 28px;}
+    .replay {margin:1.8em 0 1.2em;}
+    .bonus {background:#f7fcf7;padding:1em 1.3em;border-radius:11px;border-left:6px solid #2ECC71;margin:2em 0;}
+    .bonus-title {font-weight:700;font-size:1.18em;margin-bottom:0.7em;}
+    .steps {margin:2em 0;}
+    .steps li {margin-bottom:0.7em;}
+    .arguments {background:#f8fafd;padding:1.1em 1.5em;border-radius:10px;margin:2em 0;}
+    .testimonials {margin:2em 0;}
+    .testimonial {background:#eef6fd;padding:1.1em 1.3em;border-radius:9px;margin-bottom:1em;display:flex;gap:18px;align-items:flex-start;}
+    .avatar {width:52px;height:52px;border-radius:50%;}
+    .test-text {flex:1;}
+    .test-author {font-weight:700;color:#2864F0;}
+    .faq {background:#f6f8fc;padding:1.3em 1.4em;border-radius:11px;margin:2em 0;}
+    details summary {cursor:pointer;font-weight:600;}
+    details[open] {background:#e7f0fa;}
+    .sticky-bar {position:fixed;bottom:16px;left:0;width:100%;z-index:50;text-align:center;display:flex;justify-content:center;}
+    .sticky-bar .cta {margin:0;background:#E74C3C;padding:0.7em 2.2em;font-size:1.09em;}
+    @media (max-width:700px){.webinar-block{padding:14px 2vw;}.replay iframe{height:230px;}}
+  </style>
+  <script>
+    // Timer d’urgence Webinar
+    function startTimer(d) {
+      var deadline = new Date(d).getTime();
+      var x = setInterval(function() {
+        var now = new Date().getTime();
+        var t = deadline - now;
+        if(t<0){document.getElementById('timer').innerHTML='OFFRE TERMINÉE';clearInterval(x);return;}
+        var days = Math.floor(t / (1000*60*60*24));
+        var hours = Math.floor((t%(1000*60*60*24))/(1000*60*60));
+        var minutes = Math.floor((t%(1000*60*60))/(1000*60));
+        var seconds = Math.floor((t%(1000*60))/1000);
+        document.getElementById('timer').innerHTML = "Il reste : "+days+"j "+hours+"h "+minutes+"m "+seconds+"s";
+      },1000);
+    }
+    window.onload = function(){startTimer("[DATE_FIN]");};
+  </script>
+</head>
+<body>
+  <div class="hero">
+    <div class="badge">🎥 MASTERCLASS AFFILIÉ PLATINUM</div>
+    <h1>[TITRE WEBINAR] <span style="font-weight:400;">– Session VIP Premium</span></h1>
+    <div id="timer" class="timer">Chargement…</div>
+    <p style="margin:1.4em 0 0.7em;font-size:1.13em;">[SOUS-TITRE ACCROCHEUR : "Ce que 97% des affiliés ignorent pour doubler leurs commissions"]</p>
+    <a href="[URL_AFFILIE]" class="cta">Accéder à l'offre VIP maintenant !</a>
+  </div>
+  <div class="webinar-block">
+    <section class="replay">
+      <h2>Replay du Webinar Premium</h2>
+      <iframe width="100%" height="330" src="[URL_VIDEO_WEBINAR]" title="Replay Webinar" frameborder="0" allowfullscreen></iframe>
+      <div style="margin-top:0.4em;font-size:0.97em;color:#666;">Pas de temps à perdre : l’offre ci-dessous expire dès la fin du replay !</div>
+    </section>
+
+    <section class="bonus">
+      <div class="bonus-title">🎁 Bonus participants (uniquement via cette page) :</div>
+      <ul>
+        <li>Accès immédiat au PDF "7 templates de pages qui convertissent"</li>
+        <li>Groupe Telegram Premium + session FAQ en direct chaque vendredi</li>
+        <li>Modèle Excel “prédicteur de gains” à importer dans Google Sheets</li>
+        <li>Script emailing spécial “relance dormant” (7 séquences complètes)</li>
+      </ul>
+    </section>
+
+    <section class="steps">
+      <h2>Comment profiter de l’offre exclusive ?</h2>
+      <ol>
+        <li><b>Étape 1 :</b> Inscris-toi via le bouton ci-dessus</li>
+        <li><b>Étape 2 :</b> Accède à l’espace membres (bonus débloqués immédiatement)</li>
+        <li><b>Étape 3 :</b> Mets en place ta première campagne en suivant le plan d’action guidé</li>
+      </ol>
+    </section>
+
+    <section class="arguments">
+      <h2>Ce que vous allez apprendre :</h2>
+      <ul>
+        <li>🚀 La méthode 80/20 de l’affilié premium (concrète, duplicable, prouvée)</li>
+        <li>🚀 Comment transformer un simple lien en une “offre irrésistible” (avec exemples réels)</li>
+        <li>🚀 Les scripts exacts pour lancer tes séquences, même sans audience</li>
+        <li>🚀 Les 3 erreurs fatales des affiliés débutants (et comment les éviter sans efforts)</li>
+      </ul>
+    </section>
+
+    <section class="testimonials">
+      <h2>Ils ont boosté leurs résultats après le webinar :</h2>
+      <div class="testimonial">
+        <img class="avatar" src="https://randomuser.me/api/portraits/men/32.jpg" alt="avatar">
+        <div class="test-text">
+          <div class="test-author">Samuel G.</div>
+          <p>“J’ai appliqué les astuces vues en live… 5 ventes dans la semaine, alors que je galérais depuis 2 mois !”</p>
+        </div>
+      </div>
+      <div class="testimonial">
+        <img class="avatar" src="https://randomuser.me/api/portraits/women/26.jpg" alt="avatar">
+        <div class="test-text">
+          <div class="test-author">Lucie T.</div>
+          <p>“La séquence email premium est un bijou. J’ai même eu des réponses à mes relances !”</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <h2>FAQ Express – Tes questions, nos réponses :</h2>
+      <details><summary>Est-ce qu’il faut avoir une audience ?</summary>Pas du tout, des stratégies "zéro audience" sont incluses, testées et approuvées.</details>
+      <details><summary>Je suis débutant, ça marche pour moi ?</summary>Oui, 100%. Tous les outils et tutos sont pensés pour les débutants.</details>
+      <details><summary>Combien de temps l’accès est-il garanti ?</summary>À vie pour tout achat pendant la période premium.</details>
+      <details><summary>Puis-je utiliser les modèles sur n’importe quelle plateforme ?</summary>Oui, Systeme.io, ClickFunnels, WordPress, Notion, Google Sheets…</details>
+    </section>
+    <a href="[URL_AFFILIE]" class="cta">Profiter de l’offre avant expiration !</a>
+  </div>
+  <div class="sticky-bar"><a href="[URL_AFFILIE]" class="cta">🔥 Accès VIP immédiat (bonus inclus)</a></div>
+</body>
+</html>

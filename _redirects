@@ -1,0 +1,66 @@
+# --- Canonicals de fichiers ---
+/index.html                     /                                       301
+/en/index.html                  /en/                                    301
+/fr/*                           /:splat                                  301
+
+# --- Aliases FR vers fichiers ---
+/blog                           /blog.html                               301
+/mentions                       /mentions-legales.html                   301
+/mentions-legales               /mentions-legales.html                   301
+/confidentialite                /politique-de-confidentialite.html       301
+/confidentialité                /politique-de-confidentialite.html       301
+/merci                          /merci-kit.html                          301
+
+# --- Normalisation domaine + HTTPS ---
+http://systeme-avis.com/*       https://systeme-avis.com/:splat          301!
+http://www.systeme-avis.com/*   https://systeme-avis.com/:splat          301!
+https://www.systeme-avis.com/*  https://systeme-avis.com/:splat          301!
+
+# --- i18n : tous les non-FR -> EN (Netlify condition Language) ---
+/                               /en/                                     302   Language=en
+/                               /en/                                     302   Language=de
+/                               /en/                                     302   Language=es
+/                               /en/                                     302   Language=it
+/                               /en/                                     302   Language=pt
+/                               /en/                                     302   Language=nl
+/                               /en/                                     302   Language=ru
+/                               /en/                                     302   Language=tr
+/                               /en/                                     302   Language=uk
+/                               /en/                                     302   Language=pl
+/                               /en/                                     302   Language=vi
+/                               /en/                                     302   Language=th
+/                               /en/                                     302   Language=zh
+/                               /en/                                     302   Language=ja
+/                               /en/                                     302   Language=ko
+/                               /en/                                     302   Language=sv
+/                               /en/                                     302   Language=no
+/                               /en/                                     302   Language=da
+/                               /en/                                     302   Language=fi
+/                               /en/                                     302   Language=cs
+/                               /en/                                     302   Language=sk
+/                               /en/                                     302   Language=hu
+/                               /en/                                     302   Language=ro
+/                               /en/                                     302   Language=el
+/                               /en/                                     302   Language=he
+/                               /en/                                     302   Language=id
+/                               /en/                                     302   Language=ms
+/                               /en/                                     302   Language=bg
+/                               /en/                                     302   Language=sr
+/                               /en/                                     302   Language=hr
+/                               /en/                                     302   Language=lt
+/                               /en/                                     302   Language=lv
+/                               /en/                                     302   Language=et
+
+# --- Canonique EN (/en/ avec slash) ---
+/en                             /en/                                     301
+
+# --- Aliases EN utiles ---
+/legal-notice                   /en/legal-notice.html                    301
+/privacy-policy                 /en/privacy-policy.html                  301
+/thank-you-kit                  /en/thank-you-kit.html                   301
+
+# --- API (formulaire Google Apps Script) ---
+/api/*  https://script.google.com/macros/s/AKfycbxtsu8vW25uGDXuj9ioE0j7yzaNzyLnhdAU26M6G-BipUkjoo91R07g9X8QR8akaX8l/exec  200
+
+# --- 404 en dernier ---
+/*                              /404.html                                 404

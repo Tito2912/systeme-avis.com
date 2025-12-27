@@ -1,0 +1,148 @@
+[build]
+  publish = "."
+
+[build.environment]
+  NODE_VERSION = "18"
+  NPM_VERSION = "9"
+
+# ──────────────────────────
+# REDIRECTIONS (ordre important)
+# ──────────────────────────
+
+# 1) i18n : tous les non-FR → /en/
+[[redirects]]
+  from = "/"
+  to = "/en/"
+  status = 302
+  conditions = { Language = [
+    "en","de","es","it","pt","nl","ru","tr","uk","pl","vi","th","zh","ja","ko",
+    "sv","no","da","fi","cs","sk","hu","ro","el","he","id","ms","bg","sr","hr",
+    "lt","lv","et"
+  ]}
+
+# 2) Réécriture racine vers le HTML (200, pas de changement d’URL)
+[[redirects]]
+  from = "/"
+  to = "/index.html"
+  status = 200
+
+# 3) Canoniques utiles
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/en/index.html"
+  to = "/en/"
+  status = 301
+
+[[redirects]]
+  from = "/en"
+  to = "/en/"
+  status = 301
+
+# 4) Aliases de pages (exemples)
+[[redirects]]
+  from = "/blog"
+  to = "/blog.html"
+  status = 301
+
+[[redirects]]
+  from = "/en/blog"
+  to = "/en/blog.html"
+  status = 301
+
+# 5) FR à la racine : /fr/* → (chemin) 301
+[[redirects]]
+  from = "/fr/*"
+  to = "/:splat"
+  status = 301
+
+# 6) 404 en dernier
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
+
+# ──────────────────────────
+# EN-TÊTES DE SÉCURITÉ
+# ──────────────────────────
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), camera=(), microphone=(), browsing-topics=()"
+    # CSP : n'autorise que ce qui est réellement utilisé
+    Content-Security-Policy = "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; img-src 'self' https: data:; font-src 'self' https://fonts.gstatic.com data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://www.googletagmanager.com; connect-src 'self' https://script.google.com https://www.google-analytics.com https://www.googletagmanager.com; frame-src https://www.youtube.com https://www.youtube-nocookie.com; upgrade-insecure-requests"
+
+# HTML : pas de cache agressif
+[[headers]]
+  for = "/**/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# ──────────────────────────
+# CACHING DES ASSETS (perf)
+# ──────────────────────────
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Fallback par extension
+[[headers]]
+  for = "/**/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+    Content-Type = "text/css"
+
+[[headers]]
+  for = "/**/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+    Content-Type = "application/javascript"
+
+[[headers]]
+  for = "/**/*.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+    Content-Type = "image/jpeg"
+
+[[headers]]
+  for = "/**/*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+    Content-Type = "image/png"
+
+[[headers]]
+  for = "/**/*.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+    Content-Type = "image/webp"
+
+[[headers]]
+  for = "/**/*.svg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+    Content-Type = "image/svg+xml"
+
+[[headers]]
+  for = "/**/*.ico"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+    Content-Type = "image/x-icon"
