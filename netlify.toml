@@ -9,6 +9,14 @@
 # REDIRECTIONS (ordre important)
 # ──────────────────────────
 
+# 0) Canonical host (évite un hop www → apex quand c'est possible)
+[[redirects]]
+  from = "/*"
+  to = "https://systeme-avis.com/:splat"
+  status = 301
+  force = true
+  conditions = { Host = ["www.systeme-avis.com"] }
+
 # 1) i18n : tous les non-FR → /en/
 [[redirects]]
   from = "/"
