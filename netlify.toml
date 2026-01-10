@@ -50,15 +50,162 @@
   to = "/en/"
   status = 301
 
-# 4) Aliases de pages (exemples)
+# 4) URLs canoniques (sans .html)
 [[redirects]]
   from = "/blog"
   to = "/blog.html"
+  status = 200
+
+[[redirects]]
+  from = "/blog.html"
+  to = "/blog"
   status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog-1"
+  to = "/blog-1.html"
+  status = 200
+
+[[redirects]]
+  from = "/blog-1.html"
+  to = "/blog-1"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog-2"
+  to = "/blog-2.html"
+  status = 200
+
+[[redirects]]
+  from = "/blog-2.html"
+  to = "/blog-2"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog-3"
+  to = "/blog-3.html"
+  status = 200
+
+[[redirects]]
+  from = "/blog-3.html"
+  to = "/blog-3"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/mentions-legales"
+  to = "/mentions-legales.html"
+  status = 200
+
+[[redirects]]
+  from = "/mentions-legales.html"
+  to = "/mentions-legales"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/politique-de-confidentialite"
+  to = "/politique-de-confidentialite.html"
+  status = 200
+
+[[redirects]]
+  from = "/politique-de-confidentialite.html"
+  to = "/politique-de-confidentialite"
+  status = 301
+  force = true
 
 [[redirects]]
   from = "/en/blog"
   to = "/en/blog.html"
+  status = 200
+
+[[redirects]]
+  from = "/en/blog.html"
+  to = "/en/blog"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/blog-1"
+  to = "/en/blog-1.html"
+  status = 200
+
+[[redirects]]
+  from = "/en/blog-1.html"
+  to = "/en/blog-1"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/blog-2"
+  to = "/en/blog-2.html"
+  status = 200
+
+[[redirects]]
+  from = "/en/blog-2.html"
+  to = "/en/blog-2"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/blog-3"
+  to = "/en/blog-3.html"
+  status = 200
+
+[[redirects]]
+  from = "/en/blog-3.html"
+  to = "/en/blog-3"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/legal-notice"
+  to = "/en/legal-notice.html"
+  status = 200
+
+[[redirects]]
+  from = "/en/legal-notice.html"
+  to = "/en/legal-notice"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/privacy-policy"
+  to = "/en/privacy-policy.html"
+  status = 200
+
+[[redirects]]
+  from = "/en/privacy-policy.html"
+  to = "/en/privacy-policy"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/mentions"
+  to = "/mentions-legales"
+  status = 301
+
+[[redirects]]
+  from = "/confidentialite"
+  to = "/politique-de-confidentialite"
+  status = 301
+
+[[redirects]]
+  from = "/confidentialité"
+  to = "/politique-de-confidentialite"
+  status = 301
+
+[[redirects]]
+  from = "/legal-notice"
+  to = "/en/legal-notice"
+  status = 301
+
+[[redirects]]
+  from = "/privacy-policy"
+  to = "/en/privacy-policy"
   status = 301
 
 # 5) FR à la racine : /fr/* → (chemin) 301

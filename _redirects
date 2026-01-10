@@ -4,11 +4,21 @@
 /fr/*                           /:splat                                  301
 
 # --- Aliases FR vers fichiers ---
-/blog                           /blog.html                               301
-/mentions                       /mentions-legales.html                   301
-/mentions-legales               /mentions-legales.html                   301
-/confidentialite                /politique-de-confidentialite.html       301
-/confidentialité                /politique-de-confidentialite.html       301
+/blog                           /blog.html                               200
+/blog.html                      /blog                                    301!
+/blog-1                         /blog-1.html                             200
+/blog-1.html                    /blog-1                                  301!
+/blog-2                         /blog-2.html                             200
+/blog-2.html                    /blog-2                                  301!
+/blog-3                         /blog-3.html                             200
+/blog-3.html                    /blog-3                                  301!
+/mentions                       /mentions-legales                        301
+/mentions-legales               /mentions-legales.html                   200
+/mentions-legales.html          /mentions-legales                        301!
+/confidentialite                /politique-de-confidentialite            301
+/confidentialité                /politique-de-confidentialite            301
+/politique-de-confidentialite   /politique-de-confidentialite.html       200
+/politique-de-confidentialite.html /politique-de-confidentialite         301!
 /merci                          /merci-kit.html                          301
 
 # --- Normalisation domaine + HTTPS ---
@@ -55,8 +65,20 @@ https://www.systeme-avis.com/*  https://systeme-avis.com/:splat          301!
 /en                             /en/                                     301
 
 # --- Aliases EN utiles ---
-/legal-notice                   /en/legal-notice.html                    301
-/privacy-policy                 /en/privacy-policy.html                  301
+/en/blog                        /en/blog.html                            200
+/en/blog.html                   /en/blog                                 301!
+/en/blog-1                      /en/blog-1.html                          200
+/en/blog-1.html                 /en/blog-1                               301!
+/en/blog-2                      /en/blog-2.html                          200
+/en/blog-2.html                 /en/blog-2                               301!
+/en/blog-3                      /en/blog-3.html                          200
+/en/blog-3.html                 /en/blog-3                               301!
+/en/legal-notice                /en/legal-notice.html                    200
+/en/legal-notice.html           /en/legal-notice                         301!
+/en/privacy-policy              /en/privacy-policy.html                  200
+/en/privacy-policy.html         /en/privacy-policy                       301!
+/legal-notice                   /en/legal-notice                         301
+/privacy-policy                 /en/privacy-policy                       301
 /thank-you-kit                  /en/thank-you-kit.html                   301
 
 # --- API (formulaire Google Apps Script) ---
