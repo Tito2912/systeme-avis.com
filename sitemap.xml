@@ -308,4 +308,32 @@
     <priority>0.6</priority>
 </url>
 
+  <url>
+    <loc>https://systeme-avis.com/de/legal-notice</loc>
+    <lastmod>2025-08-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+</url>
+
+  <url>
+    <loc>https://systeme-avis.com/de/privacy-policy</loc>
+    <lastmod>2025-08-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+</url>
+
+  <url>
+    <loc>https://systeme-avis.com/es/legal-notice</loc>
+    <lastmod>2025-08-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+</url>
+
+  <url>
+    <loc>https://systeme-avis.com/es/privacy-policy</loc>
+    <lastmod>2025-08-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+</url>
+
 </urlset>
